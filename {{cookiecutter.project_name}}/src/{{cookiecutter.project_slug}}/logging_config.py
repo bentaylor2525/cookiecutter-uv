@@ -39,7 +39,7 @@ logger.add(
 )
 
 # Add logfire sink
-logfire.configure(token={{cookiecutter.logfire_token}}, console=False, min_level="info")  # noqa: S106
+logfire.configure(token="{{cookiecutter.logfire_token}}", console=False, min_level="info")  # noqa: S106
 
 logger.add(**logfire.loguru_handler())
 
